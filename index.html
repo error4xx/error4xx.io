@@ -26,7 +26,30 @@ p {color: rgb(245, 35, 140);}
     <a href="raymondwithbanana.jpg" download="">
         <button type="button"> Download</button>
     </a>
+    <hr>
+    <form class="gform" method="post" data-email="example@gmail.com" action="https://script.google.com/macros/s/AKfycbxs9OxnIv_m9a29kP9cFiLq0gxtwPJopXQIZHrnW4c_ln3owQoORWNQHov7HrzxsPi_/exec">
+        <fieldset>
+            <legend>Lunch order</legend>
+          <p>
+            <label>Name: <input name="name"></label>
+          </p>
+          <p>
+            <label>Food :
+                <br />
+                <textarea name="food" cols="30"
+                    rows="3"></textarea>
+            </label>
+        </p>
+        </fieldset>
+        
+        <button class="button-success pure-button button-xlarge">
+            <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </form>
+
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
 </body>
 </html>
 
-<hr>
